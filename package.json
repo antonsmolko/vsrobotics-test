@@ -1,0 +1,67 @@
+{
+  "name": "vsrobotics-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start-server": "node bin/app.js",
+    "deploy": "sh deploy.sh"
+  },
+  "type": "module",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.2",
+    "core-js": "^3.6.5",
+    "faker": "^5.5.3",
+    "fastify": "^3.19.2",
+    "fastify-cors": "^6.0.2",
+    "fastify-formbody": "^5.1.0",
+    "fastify-secure-session": "^2.3.1",
+    "fastify-sensible": "^3.1.1",
+    "fuse.js": "^6.4.6",
+    "http-errors": "^1.8.0",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "normalizr": "^3.6.1",
+    "pino-pretty": "^5.1.2",
+    "vee-validate": "^3.4.11",
+    "velocity-animate": "^2.0.6",
+    "vue": "^2.6.11",
+    "vue-scrollto": "^2.20.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "8.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "nodemon": "^2.0.12",
+    "sass": "^1.35.2",
+    "sass-loader": "^10.2.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
