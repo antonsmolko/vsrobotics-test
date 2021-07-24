@@ -1,0 +1,15 @@
+.card {
+    padding: $spacer;
+    box-shadow: $box-shadow-large;
+    border-radius: $card-border-radius;
+    background: white;
+    box-sizing: border-box;
+
+    & &-large {
+        padding: $spacer-medium;
+    }
+
+    & &-flat {
+        box-shadow: none;
+    }
+}

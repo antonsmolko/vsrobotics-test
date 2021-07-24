@@ -1,0 +1,21 @@
+.genre-item {
+    &:not(:last-child) {
+        margin-bottom: $spacer-medium;
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $heading-color;
+    }
+
+    &__action {
+        margin-left: $spacer;
+    }
+}

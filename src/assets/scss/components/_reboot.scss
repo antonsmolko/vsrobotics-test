@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+a:not([href]):not([class]) {
+    &,
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+[role="button"] {
+    cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+
+    &:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+::-webkit-inner-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}

@@ -1,0 +1,47 @@
+/* Colors
+ ========================================================================== */
+$base-color: #67748e;
+$heading-color: #344767;
+$muted-color: #d2d6d9;
+$danger-color: #ea0606;
+
+/* Backgrounds
+ ========================================================================== */
+$base-bg: #f8f9fa;
+$muted-bg: #f3f3f3;
+
+/* Spacers
+ ========================================================================== */
+$spacer-small: 10px;
+$spacer: 20px;
+$spacer-medium: 30px;
+$spacer-large: 40px;
+
+/* Box Shadows
+ ========================================================================== */
+$box-shadow-medium: 0 5px 15px rgba(#000, .08);
+$box-shadow-large: 0 20px 27px rgba(#000, .05);
+
+/* Form
+ ========================================================================== */
+$form-control-height: 32px;
+
+$input-group-text-color: #344767;
+$input-color: #495057;
+$input-border-color: #d2d6da;
+$input-border-width: 1px;
+$input-border: $input-border-width solid $input-border-color;
+$input-font-size: .875rem;
+$input-line-height: $form-control-height - 2 * $input-border-width;
+
+/* Buttons
+ ========================================================================== */
+$btn-default-bg: linear-gradient(310deg, #ced4da, #ebeff4);
+$btn-primary-bg: linear-gradient(310deg, #7928ca, #ff0080);
+$btn-success-bg: linear-gradient(310deg, #17ad37, #98ec2d);
+$btn-danger-bg: linear-gradient(310deg, #ea0606, #ff667c);
+$btn-line-height: $form-control-height;
+
+/* Card
+ ========================================================================== */
+$card-border-radius: 1rem;

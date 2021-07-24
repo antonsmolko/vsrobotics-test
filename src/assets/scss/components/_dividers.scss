@@ -1,0 +1,9 @@
+hr, .divider {
+    height: 1px;
+    color: inherit;
+    background-color: transparent;
+    background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.4),transparent);
+    opacity: .25;
+    border: 0;
+    margin: $spacer 0;
+}

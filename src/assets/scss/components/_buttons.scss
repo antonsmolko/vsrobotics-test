@@ -1,0 +1,52 @@
+/* Buttons
+ ========================================================================== */
+
+.btn {
+    outline: none;
+    border: none;
+    padding: 0 1.2rem;
+    line-height: $btn-line-height;
+    border-radius: 500px;
+    color: $base-color;
+    font-size: 16px;
+    letter-spacing: .03em;
+    cursor: pointer;
+    box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+    background-size: 150%;
+    background-position-x: 25%;
+
+    @include button-bg();
+
+    &-primary {
+        @include button-bg($btn-primary-bg, white);
+    }
+
+    &-success {
+        @include button-bg($btn-success-bg, white);
+    }
+
+    &-danger {
+        @include button-bg($btn-danger-bg, white);
+    }
+
+    &[disabled] {
+        background: #dddddd;
+        color: darkgray;
+        cursor: inherit;
+        box-shadow: none;
+    }
+}
+
+.btn-close {
+    outline: none;
+    border: none;
+    padding: 3px;
+    background: none;
+    color: $muted-color;
+    cursor: pointer;
+    transition: color .15s ease-in-out;
+
+    &:hover {
+        color: darken($muted-color, 5%);
+    }
+}
