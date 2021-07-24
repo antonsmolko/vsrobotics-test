@@ -1,6 +1,6 @@
 # vsrobotics-test
 
-![vstobotics-test](https://github.com/antonsmolko/vsrobotics-test/blob/main/src/assets/img/demo.jpg)
+![vsrobotics-test](https://github.com/antonsmolko/vsrobotics-test/blob/master/src/assets/img/demo.jpg)
 
 ## Project setup
 ```
