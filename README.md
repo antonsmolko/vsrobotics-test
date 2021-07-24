@@ -2,7 +2,7 @@
 
 ![vsrobotics-test](https://github.com/antonsmolko/vsrobotics-test/blob/master/src/assets/img/demo.jpg)
 
-See [Description](https://github.com/antonsmolko/vsrobotics-test/blob/main/src/assets/description/test.md).
+See [Description](https://github.com/antonsmolko/vsrobotics-test/blob/master/src/assets/description/test.md).
 
 ## Project setup
 ```
