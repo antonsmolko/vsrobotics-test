@@ -24,7 +24,7 @@
                 <form @submit.prevent="validate({ silent: true }).then(send)">
                     <ValidationProvider v-slot="{ errors }" name="Жанр" rules="required">
                         <v-select
-                            v-model="form.genre"
+                            v-model="form.genre_id"
                             :options="genreWithLessOrEqual5Books"
                             option-label="name"
                             id="bookGenre"
@@ -103,7 +103,7 @@ extend('required', {
 })
 
 const formDefaultState = {
-    genre: null,
+    genre_id: null,
     title: null,
     author_first_name: null,
     author_mid_name: null,

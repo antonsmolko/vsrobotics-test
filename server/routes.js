@@ -52,7 +52,7 @@ export default (app, defaultState = {}) => {
         book.id = getNextId();
         book.date_add = _.now();
 
-        const targetGenre = state.genres.find(({ id }) => id === book.genre);
+        const targetGenre = state.genres.find(({ id }) => id === book.genre_id);
 
         if (!targetGenre) {
             return reply
@@ -61,7 +61,7 @@ export default (app, defaultState = {}) => {
                 .send({ message: `Жанр с ID ${book.id} не найден`});
         }
 
-        targetGenre.books.push(_.omit(book, 'genre'));
+        targetGenre.books.push(_.omit(book, 'genre_id'));
 
         reply
             .code(200)

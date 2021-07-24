@@ -2,6 +2,8 @@
 
 ![vstobotics-test](https://github.com/antonsmolko/vsrobotics-test/blob/main/src/assets/img/demo.jpg)
 
+See [Description](https://github.com/antonsmolko/vsrobotics-test/blob/main/src/assets/description/test.md).
+
 ## Project setup
 ```
 npm install
