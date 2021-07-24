@@ -1,13 +1,15 @@
 # vsrobotics-test
 
+![vstobotics-test](https://github.com/antonsmolko/vsrobotics-test/blob/main/src/assets/img/demo.jpg)
+
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for development with server
 ```
-npm run serve
+make start
 ```
 
 ### Compiles and minifies for production
