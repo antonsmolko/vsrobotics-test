@@ -27,7 +27,6 @@
     "normalizr": "^3.6.1",
     "pino-pretty": "^5.1.2",
     "vee-validate": "^3.4.11",
-    "velocity-animate": "^2.0.6",
     "vue": "^2.6.11",
     "vue-scrollto": "^2.20.0",
     "vuex": "^3.6.2"

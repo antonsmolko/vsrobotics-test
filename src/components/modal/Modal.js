@@ -2,43 +2,34 @@ const raf = (fn) => window.requestAnimationFrame(() => {
     window.requestAnimationFrame(() => fn());
 })
 
-const fixBody = () => {
+const fixBody = (scrollBarWidth) => {
+    document.body.style.paddingRight = `${scrollBarWidth}px`;
     document.body.style.overflow = 'hidden';
-    document.body.style.paddingRight = `${getScrollBarWidth()}px`;
 }
 
 const clearBodyStyle = () => {
     document.body.style = null;
 }
 
-const scrollHeight = Math.max(
-    document.body.scrollHeight, document.documentElement.scrollHeight,
-    document.body.offsetHeight, document.documentElement.offsetHeight,
-    document.body.clientHeight, document.documentElement.clientHeight
-);
-
 const getScrollBarWidth = () => {
-    if (scrollHeight > window.innerHeight) {
-        const div = document.createElement('div')
+    const div = document.createElement('div');
 
-        div.style.overflowY = 'scroll'
-        div.style.width = '50px'
-        div.style.height = '50px'
+    div.style.overflowY = 'scroll';
+    div.style.width = '50px';
+    div.style.height = '50px';
 
-        document.body.append(div)
-        const scrollBarWidth = div.offsetWidth - div.clientWidth
+    document.body.append(div);
+    const scrollBarWidth = div.offsetWidth - div.clientWidth;
 
-        div.remove()
+    div.remove();
 
-        return scrollBarWidth
-    }
-
-    return 0;
+    return scrollBarWidth;
 }
 
 class Modal {
     constructor (modalEl) {
         this.modalEl = modalEl;
+        this.scrollBarWidth = getScrollBarWidth()
     }
 
     show () {
@@ -69,7 +60,7 @@ class Modal {
             };
 
             raf(() => {
-                fixBody();
+                fixBody(this.scrollBarWidth);
                 backdropEl.classList.add('show');
                 backdropEl.addEventListener('transitionend', handler);
             });

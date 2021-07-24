@@ -119,6 +119,7 @@ export default {
 
         filteredBooks () {
             const query = this.query.trim();
+            // console.log(this.fuse.search(query))
             const fuseSearch = query
                 ? this.fuse.search(query).map(({ item }) => item)
                 : this.books;
@@ -130,6 +131,12 @@ export default {
 
         books () {
             return this.$store.getters['books/booksByGenre'](this.item);
+        }
+    },
+
+    watch: {
+        books () {
+            this.fuse = new Fuse(this.books, fuseOptions);
         }
     },
 

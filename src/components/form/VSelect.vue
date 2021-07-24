@@ -85,7 +85,6 @@ export default {
         value: null
     }),
 
-
     computed: {
         errorString () {
             return Array.isArray(this.errors) ? this.errors.join(', ') : this.errors

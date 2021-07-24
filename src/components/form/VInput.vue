@@ -17,7 +17,7 @@ export default {
     name: "VInput",
 
     model: {
-        event: 'change',
+        event: 'input',
         prop: 'model'
     },
 
@@ -67,7 +67,7 @@ export default {
         },
 
         value (value) {
-            this.$emit('change', value)
+            this.$emit('input', value)
         }
     }
 }

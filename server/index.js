@@ -8,11 +8,9 @@ const setUpCors = (app) => {
   app.register(fastifyCors, {
     origin: (origin, cb) => {
       if(/localhost/.test(origin)){
-        //  Request from localhost will pass
         cb(null, true)
         return
       }
-      // Generate an error on other origins, disabling access
       cb(new Error("Not allowed"))
     }
   });

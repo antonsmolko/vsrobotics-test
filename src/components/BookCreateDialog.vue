@@ -17,10 +17,7 @@
                 </div>
             </transition>
 
-            <ValidationObserver
-                ref="observer"
-                v-slot="{ validate, invalid }"
-            >
+            <ValidationObserver ref="observer" v-slot="{ validate, invalid }">
                 <form @submit.prevent="validate({ silent: true }).then(send)">
                     <ValidationProvider v-slot="{ errors }" name="Жанр" rules="required">
                         <v-select
