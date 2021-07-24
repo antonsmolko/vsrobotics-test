@@ -20,7 +20,7 @@
             items: [
                 {
                     id: int,
-                    titile: string, // название книги
+                    title: string, // название книги
                     date_add: string (format: "YYYY-MM-DD HH:mm:ss.uuuuu"), // Дата добавления
                     author_last_name: string, // фамилия автора
                     author_first_name: string, // имя автора
