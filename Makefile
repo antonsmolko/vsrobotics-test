@@ -1,7 +1,7 @@
 install: install-deps
 
 start:
-	heroku local -f Procfile.dev
+	npx nodemon bin/app.js & npm run serve
 
 start-backend:
 	npx nodemon bin/app.js
@@ -9,22 +9,5 @@ start-backend:
 start-frontend:
 	npm run serve
 
-install-deps:
-	npm ci
-
 build:
 	npm run build
-
-lint:
-	npx eslint . --ext js,jsx
-
-publish:
-	npm publish
-
-deploy:
-	git push heroku
-
-test:
-	npm test -s
-
-.PHONY: test
