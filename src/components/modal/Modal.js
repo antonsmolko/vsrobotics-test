@@ -3,7 +3,10 @@ const raf = (fn) => window.requestAnimationFrame(() => {
 })
 
 const fixBody = (scrollBarWidth) => {
-    document.body.style.paddingRight = `${scrollBarWidth}px`;
+    if (document.body.scrollHeight > window.innerHeight) {
+        document.body.style.paddingRight = `${scrollBarWidth}px`;
+    }
+
     document.body.style.overflow = 'hidden';
 }
 
